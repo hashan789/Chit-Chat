@@ -22,7 +22,7 @@ export default function Login({ onIdSubmit }) {
     return (
         <div className="d-flex align-items-center justify-content-center border">
            <div style={{ width: '30vw', height: '100vh',backgroundSize: 'contain'}}>
-              <video style={{ width: '100vw', height: '100vh',backgroundSize: 'contain'}}>
+              <video style={{ width: '100vw', height: '100vh',backgroundSize: 'contain'}} autoplay muted>
                  <source src={video_url} type="video/mp4">
               </video>
            </div>
