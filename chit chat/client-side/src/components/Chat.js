@@ -23,7 +23,7 @@ export default function Chat() {
 
     return (
         <div className="d-flex flex-column flex-grow-1">
-           <div className="flex-grow-1 overflow-auto" style={{ backgroundImage: `url(${chatBox_theme})`,backgroundRepeat: 'no-repeat',backgroundSize: 'cover'}}>
+           <div className="flex-grow-1 overflow-auto" style={{ backgroundImage: `url(${chatBox_theme})`}}>
                <div className="d-flex flex-column align-items-start justify-content-end px-3">
                   {selectedChatbox.messages.map((message,index) => { 
 
