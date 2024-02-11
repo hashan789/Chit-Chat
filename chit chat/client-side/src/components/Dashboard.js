@@ -10,7 +10,7 @@ export default function Dashboard({ id }) {
   return (
         <div className="d-flex" style={{ height : '100vh' }}>
           <Sidebar id={id}/>
-          {selectedChatbox && <Chat />}
+          {!selectedChatbox ? <div className="d-flexbox align-self-center mx-auto">"No Conversations Here!"</div> : selectedChatbox && <Chat />}
         </div>
     )
 }
