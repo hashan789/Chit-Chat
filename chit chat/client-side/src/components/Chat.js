@@ -12,6 +12,8 @@ export default function Chat() {
     },[])
     const { sendMessage, selectedChatbox } = useChatbox()
 
+    const chatBox_theme = "https://res.cloudinary.com/practicaldev/image/fetch/s--WAKqnINn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/tw0nawnvo0zpgm5nx4fp.png"
+
     function handleSubmit(e){
         e.preventDefault()
 
@@ -21,7 +23,7 @@ export default function Chat() {
 
     return (
         <div className="d-flex flex-column flex-grow-1">
-           <div className="flex-grow-1 overflow-auto">
+           <div className="flex-grow-1 overflow-auto" style={{ backgroundImage: `url(${chatBox_theme})`,backgroundRepeat: 'no-repeat',backgroundSize: 'cover'}}>
                <div className="d-flex flex-column align-items-start justify-content-end px-3">
                   {selectedChatbox.messages.map((message,index) => { 
 
