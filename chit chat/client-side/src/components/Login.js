@@ -22,7 +22,7 @@ export default function Login({ onIdSubmit }) {
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="d-flex align-items-center">
                     <Form.Label style={{width:'200px'}}>Enter your Id</Form.Label>
-                     <div style={{width:'750px'},{marginLeft:'20px'}}>
+                     <div style={{width:'750px',marginLeft:'20px'}}>
                        <Form.Control type="text" ref={idRef} style={{width:'600px'}} required/>
                        <Button type="submit" className="m-4">Login</Button>
                        <Button onClick={createNewId} variant="secondary">Create A New Id</Button>
