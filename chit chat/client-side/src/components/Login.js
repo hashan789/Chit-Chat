@@ -6,7 +6,7 @@ export default function Login({ onIdSubmit }) {
 
     const idRef = useRef()
 
-    const home_url = 'https://i.pinimg.com/564x/c0/d6/3e/c0d63e388e9290964ff1a393764faa43.jpg'
+    const home_url = 'https://i.pinimg.com/originals/ba/b4/7e/bab47e473a2d906ed285424e8a6b13f3.gif'
     const video_url = "https://pin.it/3cUoQQUdM"
 
     function handleSubmit(e){
@@ -21,10 +21,7 @@ export default function Login({ onIdSubmit }) {
 
     return (
         <div className="d-flex align-items-center justify-content-center border">
-           <div style={{ width: '30vw', height: '100vh',backgroundSize: 'contain'}}>
-              <video style={{ width: '100vw', height: '100vh',backgroundSize: 'contain'}} autoplay muted>
-                 <source src={video_url} type="video/mp4">
-              </video>
+           <div style={{ width: '30vw', height: '100vh',backgroundSize: 'contain', backgroundImage: `url(${home_url})`}}>
            </div>
           <div style={{ width: '50vw' , marginLeft: '50px' }}>
             <div className="d-flex justify-content-center mx-auto">
