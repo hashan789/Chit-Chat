@@ -12,7 +12,7 @@ export default function Chat() {
     },[])
     const { sendMessage, selectedChatbox } = useChatbox()
 
-    const chatBox_theme = "https://res.cloudinary.com/practicaldev/image/fetch/s--WAKqnINn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/tw0nawnvo0zpgm5nx4fp.png"
+    const chatBox_theme = "https://i.pinimg.com/564x/98/da/8f/98da8f9306de27424460d16e53938b72.jpg"
 
     function handleSubmit(e){
         e.preventDefault()
