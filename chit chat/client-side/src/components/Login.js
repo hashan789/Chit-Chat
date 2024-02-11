@@ -1,12 +1,13 @@
 import React, { useRef } from 'react'
-import { Button, Form } from 'react-bootstrap'
+import { Button, Container, Form } from 'react-bootstrap'
 import { v4 as uid } from 'uuid'
 
 export default function Login({ onIdSubmit }) {
 
     const idRef = useRef()
 
-    const home_img = 'https://i.pinimg.com/564x/c0/d6/3e/c0d63e388e9290964ff1a393764faa43.jpg'
+    const home_url = 'https://i.pinimg.com/564x/c0/d6/3e/c0d63e388e9290964ff1a393764faa43.jpg'
+    const video_url = "https://pin.it/3cUoQQUdM"
 
     function handleSubmit(e){
         e.preventDefault()
@@ -20,7 +21,9 @@ export default function Login({ onIdSubmit }) {
 
     return (
         <div className="d-flex align-items-center justify-content-center border">
-           <div style={{ width: '30vw', height: '100vh', backgroundImage: `url(${home_img})`,backgroundSize: 'contain'}}></div>
+           <div style={{ width: '30vw', height: '100vh',backgroundSize: 'contain'}}>
+              <video src={video_url} style={{ width: '100vw', height: '100vh',backgroundSize: 'contain'}}/>
+           </div>
           <div style={{ width: '50vw' , marginLeft: '50px' }}>
             <div className="d-flex justify-content-center mx-auto">
                 <h6><b style={{ fontSize : '50px' }}>Chit Chat</b></h6>
