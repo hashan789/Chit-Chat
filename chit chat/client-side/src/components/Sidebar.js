@@ -19,8 +19,8 @@ export default function Sidebar({ id }) {
     }
 
     return (
-        <div style={{marginTop:'25px'}}>
-        <div style={{ width:'250px' }} className="border d-flex flex-column">
+        <div>
+        <div style={{ width:'250px' , height : '100vh' }} className="border d-flex flex-column">
             <Tab.Container className="border" activeKey={activeKey} onSelect={setActivekey}>
                 <Nav variant="tabs" className="justify-content-center">
                     <Nav.Item>
