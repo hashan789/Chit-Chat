@@ -6,6 +6,8 @@ export default function Login({ onIdSubmit }) {
 
     const idRef = useRef()
 
+    const home_img = 'https://i.pinimg.com/564x/c0/d6/3e/c0d63e388e9290964ff1a393764faa43.jpg'
+
     function handleSubmit(e){
         e.preventDefault()
     
@@ -17,8 +19,9 @@ export default function Login({ onIdSubmit }) {
     }
 
     return (
-        <Container className="d-flex align-items-center justify-content-center border p-4" style={{marginTop:'200px'}}>
-          <div className="mx-auto">
+        <Container className="d-flex align-items-center justify-content-center border">
+           <div style={{ width: '30vw', height: '100vh', backgroundImage: url(home_img),backgroundSize: 'contain'}}></div>
+          <div style={{ width: '50vw' , marginLeft: '50px' }}>
             <div className="d-flex justify-content-center mx-auto">
                 <h6><b style={{ fontSize : '50px' }}>Chit Chat</b></h6>
             </div>
