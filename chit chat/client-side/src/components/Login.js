@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { Button, Container, Form } from 'react-bootstrap'
+import { Button, Form } from 'react-bootstrap'
 import { v4 as uid } from 'uuid'
 
 export default function Login({ onIdSubmit }) {
@@ -19,7 +19,7 @@ export default function Login({ onIdSubmit }) {
     }
 
     return (
-        <Container className="d-flex align-items-center justify-content-center border">
+        <div className="d-flex align-items-center justify-content-center border">
            <div style={{ width: '30vw', height: '100vh', backgroundImage: url(home_img),backgroundSize: 'contain'}}></div>
           <div style={{ width: '50vw' , marginLeft: '50px' }}>
             <div className="d-flex justify-content-center mx-auto">
@@ -36,6 +36,6 @@ export default function Login({ onIdSubmit }) {
                 </Form.Group>
             </Form>
             </div>
-        </Container>
+        </div>
     )
 }
