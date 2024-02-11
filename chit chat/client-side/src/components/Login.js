@@ -20,7 +20,7 @@ export default function Login({ onIdSubmit }) {
 
     return (
         <div className="d-flex align-items-center justify-content-center border">
-           <div style={{ width: '30vw', height: '100vh', backgroundImage: url(home_img),backgroundSize: 'contain'}}></div>
+           <div style={{ width: '30vw', height: '100vh', backgroundImage: `url(${home_img})`,backgroundSize: 'contain'}}></div>
           <div style={{ width: '50vw' , marginLeft: '50px' }}>
             <div className="d-flex justify-content-center mx-auto">
                 <h6><b style={{ fontSize : '50px' }}>Chit Chat</b></h6>
