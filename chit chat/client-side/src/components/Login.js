@@ -7,7 +7,7 @@ export default function Login({ onIdSubmit }) {
     const idRef = useRef()
 
     const home_url = 'https://i.pinimg.com/originals/e3/1b/75/e31b752875679b64fce009922f9f0dda.gif'
-    const last_img = 'https://i.pinimg.com/originals/14/ef/2e/14ef2ed40fb7aed132233233a7034468.gif'
+    const last_img = 'https://i.pinimg.com/564x/ac/4c/b7/ac4cb75d1ee332212a369aebffe2abd4.jpg'
     const video_url = "https://pin.it/3cUoQQUdM"
 
     function handleSubmit(e){
